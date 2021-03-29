@@ -7,11 +7,12 @@ const VideoDetail = ({ video }) => (
       className={styles.video}
       id="ytplayer"
       type="text/html"
+      title="yotube video player"
       width="100%"
       height="500px"
       src={`https://www.youtube.com/embed/${video.id}`}
-      frameborder="0"
-      allowfullscreen></iframe>
+      frameBorder="0"
+      allowFullScreen></iframe>
     <h1>{video.snippet.title}</h1>
     <h2>{video.snippet.channelTitle}</h2>
     <pre className={styles.description}>{video.snippet.description}</pre>
